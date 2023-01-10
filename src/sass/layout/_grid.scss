@@ -1,0 +1,45 @@
+.grid{
+    width:70%;
+    height:80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    font-weight: 553;
+    place-items:center center;
+
+    .one,.four,.six{
+        font-size: 4rem;
+    }
+    .two, .three, .five{
+        font-size:2rem;
+    }
+    .one {
+            grid-row: 1/2;
+            grid-column: 1/2;
+    }
+
+    .two {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .three {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .four {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .five {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .six {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+}
