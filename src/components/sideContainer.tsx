@@ -2,7 +2,7 @@ import React from 'react';
 import PhotoBox from './photoBox';
 
 function SideContainer() {
-  const contents = [{}, {}, {}, {}, {}, {}, {}];
+  const contents = [{}, {}, {}, {}, {}, {}];
 
   return (
     <div className="sideContainer">
