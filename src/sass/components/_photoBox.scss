@@ -1,3 +1,5 @@
+
+
 .photoBox{
     width: 5rem;
     height: 5rem;
@@ -7,6 +9,13 @@
     // animation-name: change;
     // animation-duration: 2s;
     // animation-iteration-count: infinite;
-    background-color: black;
+    background-color: gray;
+    border-radius:10px;
+    overflow: hidden;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
 }

@@ -1,7 +1,14 @@
 import React from 'react';
 
-function PhotoBox() {
-  return <div className="photoBox" />;
+interface PropsType {
+  url: string;
+}
+function PhotoBox({ url }: PropsType) {
+  return (
+    <div className="photoBox">
+      <img src={url} alt="이미지" />
+    </div>
+  );
 }
 
 export default PhotoBox;

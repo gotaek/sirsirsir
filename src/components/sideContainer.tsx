@@ -1,13 +1,15 @@
 import React from 'react';
 import PhotoBox from './photoBox';
+import type { Iphotos } from './leftSideContainer';
 
-function SideContainer() {
-  const contents = [{}, {}, {}, {}, {}, {}];
-
+interface PropsType {
+  photos: Iphotos[];
+}
+function SideContainer({ photos }: PropsType) {
   return (
     <div className="sideContainer">
-      {contents.map(() => {
-        return <PhotoBox />;
+      {photos.map((elem) => {
+        return <PhotoBox url={elem.link} />;
       })}
     </div>
   );

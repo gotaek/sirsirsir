@@ -1,7 +1,8 @@
 import React from 'react';
 import './sass/main.scss';
 import Header from './components/header';
-import SideContainer from './components/sideContainer';
+import LeftSideContainer from './components/leftSideContainer';
+import RightSideContainer from './components/rightSideContainer';
 import ContentsContainer from './components/contentsContainer';
 import Footer from './components/Footer';
 
@@ -10,9 +11,9 @@ function App() {
     <div>
       <Header />
       <div className="flex">
-        <SideContainer />
+        <LeftSideContainer />
         <ContentsContainer />
-        <SideContainer />
+        <RightSideContainer />
       </div>
       <Footer />
     </div>

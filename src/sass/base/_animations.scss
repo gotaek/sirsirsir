@@ -1,0 +1,27 @@
+@keyframes change {
+    25% {
+        background-image: linear-gradient(to right, #f0c27b, #4b1248);
+        clip-path: polygon(48% 0, 49% 0, 100% 100%, 0% 100%);
+    }
+
+    40% {
+        background-image: linear-gradient(to right, #c21500, #ffc500);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    60% {
+        background-image: linear-gradient(to right, #c21500, #ffc500);
+        clip-path: circle(75%);
+
+    }
+
+    75% {
+        background-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+        clip-path: circle(49% at 50% 50%);
+    }
+
+    100% {
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+
+}
