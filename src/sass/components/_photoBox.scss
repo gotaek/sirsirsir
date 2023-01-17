@@ -1,5 +1,12 @@
 .photoBox{
     width: 5rem;
     height: 5rem;
+    transition: all 0.5s ease;
+    // background-image: linear-gradient(to right, #000000, #e74c3c);
+    // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    // animation-name: change;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
     background-color: black;
+
 }
