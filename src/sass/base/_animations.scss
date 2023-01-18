@@ -1,27 +1,72 @@
-@keyframes change {
-    25% {
-        background-image: linear-gradient(to right, #f0c27b, #4b1248);
-        clip-path: polygon(48% 0, 49% 0, 100% 100%, 0% 100%);
+@keyframes squareTriangleCircle {
+    //square
+    0%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-
-    40% {
-        background-image: linear-gradient(to right, #c21500, #ffc500);
+    //triangle
+    25%{
+        clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+    }
+    //square
+    50%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        border-radius:0;
+    }
+    //circle
+    75%{
+        border-radius: 50%;
+    }
+    //square
+    100%{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    60% {
-        background-image: linear-gradient(to right, #c21500, #ffc500);
-        clip-path: circle(75%);
+}
+@keyframes TriangleCircleSquare {
 
+    //triangle
+    0% {
+        clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
     }
-
+    //square
+    25% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        border-radius: 0;
+    }
+    //circle
+    50% {
+        border-radius: 50%;
+    }
+    //square
     75% {
-        background-image: linear-gradient(to right, #00d2ff, #3a7bd5);
-        clip-path: circle(49% at 50% 50%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-
+    //triangle
     100% {
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
     }
-
+}
+@keyframes CircleSquareTriangle {
+    //circle
+    0% {
+        border-radius: 50%;
+    }
+    //square
+    25% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        border-radius:0;
+    }
+    //triangle
+    50% {
+        clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+    }
+    //square
+    75% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        border-radius: 0;
+    }
+    //circle
+    100% {
+        border-radius: 50%;
+    }
 }
