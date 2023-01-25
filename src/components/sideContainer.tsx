@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoBox from './photoBox';
+import ShapeBox from './shapeBox';
 import type { Iphotos } from './leftSideContainer';
 import Footer from './Footer';
 
@@ -14,8 +14,8 @@ function SideContainer({ photos }: PropsType) {
   }
   return (
     <div className="sideContainer">
-      {photos.map((elem) => {
-        return <PhotoBox url={elem.link} />;
+      {photos.map(() => {
+        return <ShapeBox />;
       })}
       {footer}
     </div>

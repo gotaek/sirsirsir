@@ -1,31 +1,31 @@
-
-
-.photoBox{
+.shapeBox{
     width: 5rem;
     height: 5rem;
-    background-color: gray;
     overflow: hidden;
     &:nth-child(3n+1){
+        background-color:yellow;
         animation-name: squareTriangleCircle;
         animation-delay: 1.5s;
         animation-timing-function: ease-in-out;
-        animation-duration: 2s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
     }
     &:nth-child(3n+2){
         clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+        background-color: red;
         animation-name: TriangleCircleSquare;
         animation-delay: 1.5s;
         animation-timing-function: ease-in-out;
-        animation-duration: 2s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
     }
     &:nth-child(3n+3) {
+        background-color:royalblue;
         border-radius: 50%;
         animation-name: CircleSquareTriangle;
         animation-delay: 1.5s;
         animation-timing-function: ease-in-out;
-        animation-duration: 2s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
     }
     
