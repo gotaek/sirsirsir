@@ -1,7 +1,7 @@
 //abstracts
 //absctracts 폴더는 프로젝트 전체에서 사용되는 모든 Sass 도구와 도우미를 담고 있다.
 //예를 들어 모든 전역 변수, 함수, mixin 및 표시자를 넣어주면 된다.
-
+@import 'abstracts/variables';
 
 //vendors
 //프로젝트에서 사용하는 외부 라이브러리 및 프레임워크의 모든 CSS 파일을 담고 있다.
@@ -10,7 +10,7 @@
 //base
 //프로젝트의 상용구 코드라고 부를 수 있는 내용을 담고 있다. 
 //사이트 전반에 사용될 폰트,디폴트 스타일, 키프레임을 포함한 애니메이션이 여기에 해당된다.
-@import 'base/base.scss';
+@import 'base/base';
 @import 'base/animations';
 
 //layout
@@ -25,6 +25,7 @@
 //즉, 소형 레이아웃 같은 의미로 사이트 내에서 재사용 가능한 작은 부분들을 의미한다.
 @import './components/sideContainer';
 @import './components/shapeBox';
+@import './components/ModalContainer';
 
 //pages
 //모든 페이지가 동일한 스타일을 사용하지는 않기 때문에, 페이지 고유의 스타일이 있는 경우 페이지 이름을 딴 파일을 만들어서 이 폴더에 넣어 사용한다.
