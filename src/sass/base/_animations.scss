@@ -1,4 +1,5 @@
-@keyframes squareTriangleCircle {
+/* change shape square to triangle to circle */
+@keyframes change-square-triangle-circle {
     //square
     0%{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -22,7 +23,9 @@
     }
 
 }
-@keyframes TriangleCircleSquare {
+
+/* change shape triangle to circle to square*/
+@keyframes change-triangle-circle-square {
 
     //triangle
     0% {
@@ -46,7 +49,9 @@
         clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
     }
 }
-@keyframes CircleSquareTriangle {
+
+/* change shape circle to square to triangle*/
+@keyframes change-circle-square-triangle {
     //circle
     0% {
         border-radius: 50%;
@@ -69,4 +74,109 @@
     100% {
         border-radius: 50%;
     }
+}
+
+/* modal fade in */
+
+@keyframes modal-fade-in {
+    0%{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        border-radius:3%;
+    }
+}
+
+.modal-fade-in {
+    overflow: hidden;
+    div{
+        animation: modal-fade-in .5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+/* modal fade out */
+
+@keyframes modal-fade-out {
+    0% {
+        border-radius: 3%;
+    }
+    100% {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.modal-fade-out {
+    overflow: hidden;
+    div{
+        animation:modal-fade-out 0.5s ease-in-out;
+        
+    }
+}
+
+/* opacity fade in */
+
+@keyframes opacity-fade-in {
+    0% {
+        background:radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    }
+    10%{
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+    }
+    20%{
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+    }
+    30% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
+    }
+    40%{
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
+    }
+    50%{
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
+    }
+    60%{
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
+    }
+    70% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
+    }
+    80% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
+    }
+    90% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
+    }
+    100% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.5));
+    }
+    
+}
+
+.opacity-fade-in{
+    animation:opacity-fade-in .5s ease-in-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+/* opacity fade out */
+@keyframes opacity-fade-out {
+    0% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    100% {
+
+
+    }
+
+}
+
+.opacity-fade-out {
+    animation: opacity-fade-out 1s ease-in-out;
+    animation-fill-mode: forwards;
 }

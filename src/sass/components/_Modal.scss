@@ -1,0 +1,23 @@
+.modalContainer{
+    z-index:10;
+    width:100%;
+    height: 155vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .modalBorder{
+        .modal {
+            background-color: white;
+            z-index: 100;
+            padding: 2rem;
+            width: 60vw;
+            height: 60vw;
+    
+        }
+    }
+    
+}

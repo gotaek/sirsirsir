@@ -1,11 +1,14 @@
-import React, { useRef, useState, useEffect, RefObject } from 'react';
-import ModalContainer from './modalContainer';
+import React, { useRef, useState, useEffect } from 'react';
+import Modal from './modal';
 
 export default function ContentsContainer() {
-  // const [divPosition, setDivPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [visibilityModal, setVisibilityModal] = useState<Boolean>(false);
+  const [delayToCloseModal, setDelayToCloseModal] = useState<Boolean>(true);
+  // const [modalPosition, setModalPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const modalRef: RefObject<HTMLDivElement> = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const [repeat, setRepeat] = useState<number | null>(null);
+  // const repeatRef = useRef<NodeJS.Timeout | null>(null);
 
   const openModal = () => {
     if (buttonRef.current) {
@@ -13,43 +16,54 @@ export default function ContentsContainer() {
       console.log(`Button's position: Left: ${rect.left}, Top: ${rect.top}`);
       // setModalPosition({ x: rect.left, y: rect.top });
     }
-    setShowModal(!showModal);
+
+    setVisibilityModal(!visibilityModal);
   };
 
   const handleClickOutSide = (e: MouseEvent) => {
-    console.log(!modalRef.current || !modalRef.current.contains(e.target as Node));
-    if (showModal && (!modalRef.current || !modalRef.current.contains(e.target as Node))) {
-      setShowModal(false);
+    if (visibilityModal && (!modalRef.current || !modalRef.current.contains(e.target as Node))) {
+      setVisibilityModal(false);
     }
   };
 
   useEffect(() => {
-    if (showModal) {
+    if (visibilityModal && repeat) {
       document.addEventListener('mousedown', handleClickOutSide);
+      clearTimeout(repeat);
+      setRepeat(null);
+      setDelayToCloseModal(false);
+
       return () => {
         document.removeEventListener('mousedown', handleClickOutSide);
       };
     }
+    setRepeat(
+      window.setTimeout(() => {
+        setDelayToCloseModal(true);
+      }, 400),
+    );
     return undefined;
-  }, [showModal]);
+  }, [visibilityModal]);
 
   return (
     <div className="grid">
-      <button className="one" ref={buttonRef} type="button" onClick={openModal}>
+      <button className="one" type="button" ref={buttonRef} onClick={openModal}>
         sirs.
       </button>
-      {showModal && (
-        <div ref={modalRef}>
-          <ModalContainer />
+      {!delayToCloseModal && (
+        <div className={`modalContainer ${visibilityModal ? 'opacity-fade-in' : 'opacity-fade-out'}`}>
+          <div className={`modalBorder ${visibilityModal ? 'modal-fade-in' : 'modal-fade-out'}`} ref={modalRef}>
+            <Modal />
+          </div>
         </div>
       )}
       <span className="two">어떤 사람인가</span>
       <span className="three">어떤 것을 했는가</span>
-      <button className="four" type="button">
+      <button className="four" type="button" ref={buttonRef} onClick={openModal}>
         irs.
       </button>
       <span className="five">어떤 사람이 될 것인가</span>
-      <button className="six" type="button">
+      <button className="six" type="button" ref={buttonRef} onClick={openModal}>
         ir.
       </button>
     </div>
