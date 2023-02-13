@@ -1,3 +1,4 @@
+/* set delay and duration of animation */
 @mixin animation-option($delay:1.5s,$duration:6s){
     animation:{
         delay:$delay;
@@ -5,4 +6,31 @@
         timing-function:ease-in-out;
         iteration-count: infinite;
     }
+}
+
+/* mobile browser */
+@mixin mobile {
+    @media (max-width: $mobile-size) {
+        @content;
+    }
+}
+
+/* tablet browser */
+@mixin tablet {
+    @media (min-width: $mobile-size+1) and (max-width: $tablet-size) {
+        @content;
+    }
+}
+
+/* desktop browser */
+@mixin desktop {
+    @media (min-width: $desktop-size) {
+        @content;
+    }
+}
+
+/* set grid item's location */
+@mixin grid-item-location($row-start,$row-end,$column-start,$column-end){
+    grid-row:#{$row-start}/#{$row-end};
+    grid-column:#{$column-start}/#{$column-end};
 }

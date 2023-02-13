@@ -47,7 +47,7 @@ export default function ContentsContainer() {
 
   return (
     <div className="grid">
-      <button className="one" type="button" ref={buttonRef} onClick={openModal}>
+      <button className="btn1" type="button" ref={buttonRef} onClick={openModal}>
         sirs.
       </button>
       {!delayToCloseModal && (
@@ -57,13 +57,13 @@ export default function ContentsContainer() {
           </div>
         </div>
       )}
-      <span className="two">어떤 사람인가</span>
-      <span className="three">어떤 것을 했는가</span>
-      <button className="four" type="button" ref={buttonRef} onClick={openModal}>
+      <span className="text1">어떤 사람인가</span>
+      <span className="text2">어떤 것을 했는가</span>
+      <button className="btn2" type="button" ref={buttonRef} onClick={openModal}>
         irs.
       </button>
-      <span className="five">어떤 사람이 될 것인가</span>
-      <button className="six" type="button" ref={buttonRef} onClick={openModal}>
+      <span className="text3">어떤 사람이 될 것인가</span>
+      <button className="btn3" type="button" ref={buttonRef} onClick={openModal}>
         ir.
       </button>
     </div>
