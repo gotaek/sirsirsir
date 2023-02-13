@@ -1,0 +1,8 @@
+@mixin animation-option($delay:1.5s,$duration:6s){
+    animation:{
+        delay:$delay;
+        duration:$duration;
+        timing-function:ease-in-out;
+        iteration-count: infinite;
+    }
+}
