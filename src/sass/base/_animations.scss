@@ -85,7 +85,7 @@
         height: 20px;
     }
     100% {
-        border-radius:3%;
+        border-radius:50%;
     }
 }
 
@@ -102,7 +102,7 @@
 
 @keyframes modal-fade-out {
     0% {
-        border-radius: 3%;
+        border-radius: 50%;
     }
     100% {
         border-radius: 50%;
@@ -167,11 +167,47 @@
 /* opacity fade out */
 @keyframes opacity-fade-out {
     0% {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
     }
+    
+    10% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
+    }
+
+    20% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
+    }
+
+    30% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
+    }
+
+    40% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
+    }
+
+    50% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
+    }
+
+    60% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
+    }
+
+    70% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
+    }
+
+    80% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+    }
+
+    90% {
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.95));
+    }
+
     100% {
-
-
+        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 1));
     }
 
 }

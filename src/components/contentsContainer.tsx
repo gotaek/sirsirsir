@@ -19,6 +19,11 @@ export default function ContentsContainer() {
 
     setVisibilityModal(!visibilityModal);
   };
+  const closeModal = () => {
+    if (visibilityModal === true) {
+      setVisibilityModal(!visibilityModal);
+    }
+  };
 
   const handleClickOutSide = (e: MouseEvent) => {
     if (visibilityModal && (!modalRef.current || !modalRef.current.contains(e.target as Node))) {
@@ -51,8 +56,11 @@ export default function ContentsContainer() {
         sirs.
       </button>
       {!delayToCloseModal && (
-        <div className={`modalContainer ${visibilityModal ? 'opacity-fade-in' : 'opacity-fade-out'}`}>
-          <div className={`modalBorder ${visibilityModal ? 'modal-fade-in' : 'modal-fade-out'}`} ref={modalRef}>
+        <div className={`modalBackground ${visibilityModal ? 'opacity-fade-in' : 'opacity-fade-out'}`}>
+          <button className="closeBtn" type="button" onClick={closeModal}>
+            ❌
+          </button>
+          <div className={`modalContainer ${visibilityModal ? 'modal-fade-in' : 'modal-fade-out'}`} ref={modalRef}>
             <Modal />
           </div>
         </div>
