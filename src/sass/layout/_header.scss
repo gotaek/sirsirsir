@@ -1,11 +1,14 @@
 .header{
-    
     .title{
-    color:white;
-    padding: 2rem 2rem 3rem;
-    font-size: 3rem;
-    font-weight: 900;
-    -webkit-text-stroke: 2px rgb(228, 223, 124);
-    text-shadow: 0 0 1.5vh rgb(228, 223, 124);
+        position: absolute;
+        top:1rem;
+        right:2rem;
+        color:white;
+        padding:0.5rem;
+        margin: 1.5rem;
+        font-size: 3rem;
+        font-weight: 900;
+        text-shadow: 0 0 1.0vh rgb(0, 0, 0);
+        z-index:10;
     }
 }
