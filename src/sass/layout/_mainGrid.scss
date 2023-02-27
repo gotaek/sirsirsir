@@ -1,13 +1,13 @@
 $btns:(btn1,btn2,btn3);
 $texts:(text1,text2,text3);
 
-.grid{
+.mainGrid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3,1fr);
     font-weight: 553;
     width: 70%;
-    height: 98vh;
+    height:100vh;
     @each $btn in $btns{
         .#{$btn}{
             font-size: 4rem;

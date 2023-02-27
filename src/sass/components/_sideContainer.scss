@@ -1,8 +1,15 @@
-.sideContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    justify-content: space-between;
-    width:25%;
+
+.leftSideContainer{
+    @include side-container('left');
+}
+.rightSideContainer{
+    @include side-container('right');
+    .shapeBox{
+        @for $i from 1 through 9 {
+            &:nth-child(#{$i}) {
+                grid-row-start:-#{$i};
+            }
+        }
+    }
+
 }

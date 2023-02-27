@@ -1,20 +1,24 @@
 import React from 'react';
 import ShapeBox from './shapeBox';
-import type { Iphotos } from './leftSideContainer';
 import Footer from './Footer';
 
 interface PropsType {
-  photos: Iphotos[];
+  isLeft: boolean;
 }
-function SideContainer({ photos }: PropsType) {
-  const rightSide = photos.length === 5;
+const shapeBoxs = [{}, {}, {}, {}, {}, {}, {}, {}];
+function SideContainer({ isLeft }: PropsType) {
   let footer;
-  if (rightSide) {
+  let className;
+
+  if (isLeft) {
     footer = <Footer />;
+    className = 'leftSideContainer';
+  } else {
+    className = 'rightSideContainer';
   }
   return (
-    <div className="sideContainer">
-      {photos.map(() => {
+    <div className={className}>
+      {shapeBoxs.map(() => {
         return <ShapeBox />;
       })}
       {footer}

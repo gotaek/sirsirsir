@@ -51,7 +51,7 @@ export default function ContentsContainer() {
   }, [visibilityModal]);
 
   return (
-    <div className="grid">
+    <div className="mainGrid">
       <button className="btn1" type="button" ref={buttonRef} onClick={openModal}>
         sirs.
       </button>
