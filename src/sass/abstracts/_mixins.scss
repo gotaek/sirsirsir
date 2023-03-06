@@ -39,11 +39,11 @@
 @mixin side-container($direction){
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     width: 25%;
-    gap: 4rem;
-    margin:3rem 0;
-    @if $direction=='right'{
-        
+    gap: 2rem;
+    margin-bottom:3rem;
+    @if $direction=='left'{
+        margin-top:1.5rem;
     }
 }

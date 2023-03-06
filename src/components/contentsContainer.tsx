@@ -65,12 +65,9 @@ export default function ContentsContainer() {
           </div>
         </div>
       )}
-      <span className="text1">어떤 사람인가</span>
-      <span className="text2">어떤 것을 했는가</span>
       <button className="btn2" type="button" ref={buttonRef} onClick={openModal}>
         irs.
       </button>
-      <span className="text3">어떤 사람이 될 것인가</span>
       <button className="btn3" type="button" ref={buttonRef} onClick={openModal}>
         ir.
       </button>

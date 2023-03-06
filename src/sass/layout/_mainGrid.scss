@@ -3,14 +3,14 @@ $texts:(text1,text2,text3);
 
 .mainGrid{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
     font-weight: 553;
     width: 70%;
-    height:100vh;
+    height:90vh;
     @each $btn in $btns{
         .#{$btn}{
-            font-size: 4rem;
+            font-size: 5.3rem;
             place-self: center center;
             color: cadetblue;
             transition: color 0.5s ease-in-out;
@@ -20,41 +20,19 @@ $texts:(text1,text2,text3);
             }
         }
     }
-    @each $text in $texts{
-        .#{$text}{
-            font-size: 2rem;
-            place-self: center center;
-            margin-top: 0.75rem;
-        }
-    }
+
 
     
     .btn1 {
-        @include grid-item-location(1,2,2,3); 
-    }
-
-    .text1 {
-        @include grid-item-location(1, 2, 3, 5);
-        margin-right: 3.125rem;
-        margin-top:0.8rem; 
-    }
-
-    .text2 {
-        @include grid-item-location(2, 3, 1, 4);
-        margin-left:8rem;
+        @include grid-item-location(1,2,1,2); 
     }
 
     .btn2{
-        @include grid-item-location(2, 3, 4, 5);
-    }
-
-    .text3 {
-        @include grid-item-location(3,4,3,6);
-        place-self: center right;
+        @include grid-item-location(3, 4, 4, 5);
     }
 
     .btn3 {
-        @include grid-item-location(3,4,6,7);
+        @include grid-item-location(5,6,7,8);
     }
 
 

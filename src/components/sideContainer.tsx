@@ -5,7 +5,7 @@ import Footer from './Footer';
 interface PropsType {
   isLeft: boolean;
 }
-const shapeBoxs = [{}, {}, {}, {}, {}, {}, {}, {}];
+const shapeBoxs = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 function SideContainer({ isLeft }: PropsType) {
   let footer;
   let className;

@@ -76,143 +76,144 @@
     }
 }
 
+
 /* modal fade in */
 
-@keyframes modal-fade-in {
-    0%{
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-    }
-    100% {
-        border-radius:50%;
-    }
-}
+// @keyframes modal-fade-in {
+//     0%{
+//         border-radius: 50%;
+//         width: 20px;
+//         height: 20px;
+//     }
+//     100% {
+//         border-radius:50%;
+//     }
+// }
 
-.modal-fade-in {
-    overflow: hidden;
-    div{
-        animation: modal-fade-in .5s ease-in-out;
-        animation-fill-mode: forwards;
-    }
-}
+// .modal-fade-in {
+//     overflow: hidden;
+//     div{
+//         animation: modal-fade-in .5s ease-in-out;
+//         animation-fill-mode: forwards;
+//     }
+// }
 
 
-/* modal fade out */
+// /* modal fade out */
 
-@keyframes modal-fade-out {
-    0% {
-        border-radius: 50%;
-    }
-    100% {
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-    }
-}
+// @keyframes modal-fade-out {
+//     0% {
+//         border-radius: 50%;
+//     }
+//     100% {
+//         border-radius: 50%;
+//         width: 20px;
+//         height: 20px;
+//     }
+// }
 
-.modal-fade-out {
-    overflow: hidden;
-    div{
-        animation:modal-fade-out 0.5s ease-in-out;
+// .modal-fade-out {
+//     overflow: hidden;
+//     div{
+//         animation:modal-fade-out 0.5s ease-in-out;
         
-    }
-}
+//     }
+// }
 
-/* opacity fade in */
+// /* opacity fade in */
 
-@keyframes opacity-fade-in {
-    0% {
-        background:radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    }
-    10%{
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
-    }
-    20%{
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
-    }
-    30% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
-    }
-    40%{
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
-    }
-    50%{
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
-    }
-    60%{
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
-    }
-    70% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
-    }
-    80% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
-    }
-    90% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
-    }
-    100% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.5));
-    }
+// @keyframes opacity-fade-in {
+//     0% {
+//         background:radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+//     }
+//     10%{
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+//     }
+//     20%{
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+//     }
+//     30% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
+//     }
+//     40%{
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
+//     }
+//     50%{
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
+//     }
+//     60%{
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
+//     }
+//     70% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
+//     }
+//     80% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
+//     }
+//     90% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
+//     }
+//     100% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.5));
+//     }
     
-}
+// }
 
-.opacity-fade-in{
-    animation:opacity-fade-in .5s ease-in-out;
-    animation-fill-mode: forwards;
-    overflow: hidden;
-}
+// .opacity-fade-in{
+//     animation:opacity-fade-in .5s ease-in-out;
+//     animation-fill-mode: forwards;
+//     overflow: hidden;
+// }
 
-/* opacity fade out */
-@keyframes opacity-fade-out {
-    0% {
-        background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-    }
+// /* opacity fade out */
+// @keyframes opacity-fade-out {
+//     0% {
+//         background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+//     }
     
-    10% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
-    }
+//     10% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.55));
+//     }
 
-    20% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
-    }
+//     20% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.6));
+//     }
 
-    30% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
-    }
+//     30% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.65));
+//     }
 
-    40% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
-    }
+//     40% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.7));
+//     }
 
-    50% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
-    }
+//     50% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.75));
+//     }
 
-    60% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
-    }
+//     60% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8));
+//     }
 
-    70% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
-    }
+//     70% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.85));
+//     }
 
-    80% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
-    }
+//     80% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.9));
+//     }
 
-    90% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.95));
-    }
+//     90% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.95));
+//     }
 
-    100% {
-        background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 1));
-    }
+//     100% {
+//         background: radial-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 1));
+//     }
 
-}
+// }
 
-.opacity-fade-out {
-    animation: opacity-fade-out 1s ease-in-out;
-    animation-fill-mode: forwards;
-}
+// .opacity-fade-out {
+//     animation: opacity-fade-out 1s ease-in-out;
+//     animation-fill-mode: forwards;
+// }

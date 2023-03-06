@@ -5,7 +5,7 @@
 .rightSideContainer{
     @include side-container('right');
     .shapeBox{
-        @for $i from 1 through 9 {
+        @for $i from 1 through 15 {
             &:nth-child(#{$i}) {
                 grid-row-start:-#{$i};
             }
