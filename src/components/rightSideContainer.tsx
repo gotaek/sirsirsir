@@ -1,9 +1,19 @@
 import React from 'react';
-import SideContainer from './sideContainer';
+import ShapeBox from './shapeBox';
 
-export interface IphotosInfo {
-  link: string;
-}
-export default function RightSideContainer() {
-  return <SideContainer isLeft={false} />;
+type SideContainerProps = {
+  boxCount: number;
+};
+
+export default function RightSideContainer({ boxCount }: SideContainerProps) {
+  return (
+    <div className="rightSideContainer">
+      <img className="smallRoseImg" src="img/rose.jpg" alt="" />
+      <div className="rightSideGrid">
+        {Array.from({ length: boxCount - 3 }, () => (
+          <ShapeBox />
+        ))}
+      </div>
+    </div>
+  );
 }

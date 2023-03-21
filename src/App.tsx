@@ -1,20 +1,23 @@
 import React from 'react';
 import './sass/main.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
-import LeftSideContainer from './components/leftSideContainer';
-import RightSideContainer from './components/rightSideContainer';
-import ContentsContainer from './components/contentsContainer';
+import Home from './pages/home';
+import PageSirs from './pages/pageSirs';
+import PageIrs from './pages/pageIrs';
+import PageIr from './pages/pageIr';
 
 function App() {
   return (
-    <div className="mainPage">
+    <BrowserRouter>
       <Header />
-      <div className="flex">
-        <LeftSideContainer />
-        <ContentsContainer />
-        <RightSideContainer />
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sirs" element={<PageSirs />} />
+        <Route path="/irs" element={<PageIrs />} />
+        <Route path="/ir" element={<PageIr />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

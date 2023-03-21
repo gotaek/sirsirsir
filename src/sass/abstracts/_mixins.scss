@@ -35,15 +35,3 @@
     grid-column:#{$column-start}/#{$column-end};
 }
 
-/* set side container option based on direction */
-@mixin side-container($direction){
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-    width: 25%;
-    gap: 2rem;
-    margin-bottom:3rem;
-    @if $direction=='left'{
-        margin-top:1.5rem;
-    }
-}
