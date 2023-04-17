@@ -6,7 +6,7 @@ $textBoxs:(textBox1,textBox2,textBox3);
     display:flex;
     justify-content: space-between;
     position:relative;
-    .bigRoseImg{
+    .backgroundRoseImg{
         z-index:10;
         width:70%;
         height:90vh;
@@ -32,21 +32,22 @@ $textBoxs:(textBox1,textBox2,textBox3);
             top:1rem;
             left:42rem;
             .link1{
-                margin-right:6rem;
+                transform:translateX(-3rem);
             }
         }
         .textBox2{
             top: 12rem;
             left: 44rem;
             .link2{
-                margin-left:5rem;
+                transform: translateX(2.5rem);
+                
             }
         }
         .textBox3 {
             top: 23rem;
             left: 38rem;
             .link3 {
-                margin-left: 20rem;
+                transform:translateX(11rem);
             }
     
         }

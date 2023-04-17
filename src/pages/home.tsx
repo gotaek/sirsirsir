@@ -1,17 +1,14 @@
 import React from 'react';
-import LeftSideContainer from '../components/leftSideContainer';
-import RightSideContainer from '../components/rightSideContainer';
-import HomeContentsContainer from '../components/homeContentsContainer';
-import { getScrollHeight } from '../API/getScrollHeight';
+import DefaultPageForm from './defaultPageForm';
+import HomeContentsContainer from '../components/contentsContainer/homeContentsContainer';
+import { getNumComponentsFromScrollHeight } from '../API/getNumComponentsFromScrollHeight';
 
 export default function Home() {
-  const numComponents = getScrollHeight();
+  const boxCount = getNumComponentsFromScrollHeight();
 
   return (
-    <div className="mainFlexbox">
-      <LeftSideContainer boxCount={numComponents} />
+    <DefaultPageForm boxCount={boxCount}>
       <HomeContentsContainer />
-      <RightSideContainer boxCount={numComponents} />
-    </div>
+    </DefaultPageForm>
   );
 }

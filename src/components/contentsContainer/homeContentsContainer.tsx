@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function HomeContentsContainer() {
   return (
     <div className="homeContentsContainer">
-      <div className="bigRoseImg" />
+      <div className="backgroundRoseImg" />
       <div className="textBoxContainer">
         <div className="textBox1">
           <Link className="link1" to="/sirs">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function getScrollHeight() {
+export function getNumComponentsFromScrollHeight() {
     const [numComponents, setNumComponents] = useState<number>(0);
     useEffect(() => {
     function handleResize() {

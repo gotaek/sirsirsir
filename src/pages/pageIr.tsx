@@ -1,16 +1,14 @@
 import React from 'react';
-import LeftSideContainer from '../components/leftSideContainer';
-import RightSideContainer from '../components/rightSideContainer';
-import { getScrollHeight } from '../API/getScrollHeight';
+import DefaultPageForm from './defaultPageForm';
+import IrContentsContainer from '../components/contentsContainer/irContentsContainer';
+import { getNumComponentsFromScrollHeight } from '../API/getNumComponentsFromScrollHeight';
 
 export default function PageIr() {
-  const numComponents = getScrollHeight();
+  const boxCount = getNumComponentsFromScrollHeight();
 
   return (
-    <div className="mainFlexbox">
-      <LeftSideContainer boxCount={numComponents} />
-
-      <RightSideContainer boxCount={numComponents} />
-    </div>
+    <DefaultPageForm boxCount={boxCount}>
+      <IrContentsContainer />
+    </DefaultPageForm>
   );
 }

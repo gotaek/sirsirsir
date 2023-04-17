@@ -1,36 +1,27 @@
 
-.leftSideContainer{
-    width: 20%;
-    height:inherit;
-    z-index: 50;
-    margin-bottom:1.6rem;
-    .leftSideGrid {
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-auto-flow:rows;
-        gap: 1rem;
-    }
-}
-
-.rightSideContainer{
+.sidecontainer{
     width: 20%;
     height: inherit;
     z-index: 50;
     margin-bottom: 1.6rem;
-    overflow: hidden;
-    .smallRoseImg{
-        top:0;
-        transform:translateX(10px);
-        width:12rem;
-        height:12rem;
-        
-    }
-    .rightSideGrid{
+    [class*="Grid"]{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
         grid-auto-flow: rows;
         gap: 1rem;
+    }
+}
+
+.leftSideContainer{
+    @extend .sidecontainer;
+}
+
+.rightSideContainer{
+    @extend .sidecontainer;
+    .smallRoseImg{
+        top:0;
+        transform:translateX(0.625rem);
+        width:12rem;
+        height:12rem;
     }
 }
