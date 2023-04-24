@@ -1,4 +1,4 @@
 .irsContentsContainer {
-    width: 100%;
-    color:white;
+    @extend .contentsContainer;
+    height: 150vh;
 }

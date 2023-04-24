@@ -1,5 +1,4 @@
 .sirsContentsContainer{
-    width:100%;
+    @extend .contentsContainer;
     height:150vh;
-    color:white;
 }

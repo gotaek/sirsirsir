@@ -1,82 +1,20 @@
-$links:(link1,link2,link3);
-$textBoxs:(textBox1,textBox2,textBox3);
-.homeContentsContainer{
-    width:100%;
-    height:80vh;
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    .backgroundRoseImg{
-        z-index:10;
-        width:70%;
-        height:90vh;
-        transform:translate(-21rem,-4rem);
-        
-        background-image: url('../../../public/img/rose.jpg') ;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:contain;
-        
-    }
-    .textBoxContainer{
-        width:100%;
-        height:inherit;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-around;
-        align-items:flex-end;
-        position:absolute;
-        color: white;
-        z-index:15;
-        .textBox1{
-            top:1rem;
-            left:42rem;
-            .link1{
-                transform:translateX(-3rem);
-            }
-        }
-        .textBox2{
-            top: 12rem;
-            left: 44rem;
-            .link2{
-                transform: translateX(2.5rem);
-                
-            }
-        }
-        .textBox3 {
-            top: 23rem;
-            left: 38rem;
-            .link3 {
-                transform:translateX(11rem);
-            }
-    
-        }
-        @each $textBox in $textBoxs{
-            .#{$textBox}{
-                display:flex;
-                flex-direction:column;
-                position:absolute;
-                @each $link in $links {
-                    .#{$link} {
-                        text-decoration: none;
-                        font-weight: 600;
-                        font-size: 3rem;
-                        place-self: center center;
-                        color: white;
-                        transition: color 0.5s ease-in-out;
-            
-                        &:hover {
-                            color: gray;
-                        }
-                    }
-                }
-                span{
-                    font-size:1.5rem;
-                }
-        }
-    }
-        
-    }
+.homeContentsContainer {
+  @extend .contentsContainer;
 
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  
+  .backgroundRoseImg {
+    z-index: 10;
+    width: 70%;
+    height: 90vh;
+    transform: translate(-21rem, -4rem);
 
+    background-image: url('../../../public/img/rose.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
 }
