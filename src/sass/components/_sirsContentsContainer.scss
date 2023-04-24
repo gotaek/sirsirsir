@@ -1,4 +1,15 @@
 .sirsContentsContainer{
     @extend .contentsContainer;
-    height:150vh;
+    height:$default-height;
+    .sirsImgContainer{
+        margin:1rem 2rem;
+        display:flex;
+        justify-content: space-around;
+    }
+    .sirsParagraphContainer{
+        display:block;
+        margin:1rem;
+        font-size:1.5rem;
+        line-height:2rem;
+    }
 }

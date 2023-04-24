@@ -1,7 +1,7 @@
 .homeContentsContainer {
   @extend .contentsContainer;
 
-  height: 80vh;
+  height: $default-height;
   display: flex;
   justify-content: space-between;
   
