@@ -1,12 +1,12 @@
 $links: (
-    link1,
-    link2,
-    link3
+    linkSirs,
+    linkIrs,
+    linkIr
 );
 $navItems: (
-    navItem1,
-    navItem2,
-    navItem3
+    navItemPast,
+    navItemPresent,
+    navItemFuture
 );
 
 nav{
@@ -20,29 +20,29 @@ nav{
     color: white;
     z-index: 15;
     
-.navItem1 {
+.navItemPast {
         top: 1rem;
         left: 42rem;
 
-        .link1 {
+        .linkSirs {
             transform: translateX(-3rem);
         }
     }
 
-    .navItem2 {
+    .navItemPresent {
         top: 12rem;
         left: 44rem;
 
-        .link2 {
+        .linkIrs {
             transform: translateX(2.5rem);
         }
     }
 
-    .navItem3 {
+    .navItemFuture {
         top: 23rem;
         left: 38rem;
 
-        .link3 {
+        .linkIr {
             transform: translateX(11rem);
         }
     }

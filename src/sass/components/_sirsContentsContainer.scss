@@ -2,12 +2,20 @@
     @extend .contentsContainer;
     height:$default-height;
     .sirsImgContainer{
-        margin:1rem 2rem;
+        margin:1rem 1rem;
+        width: 95%;
+        height: 25rem;
         display:flex;
         justify-content: space-around;
+        img:first-child{
+            width:60%;
+        }
+        img:last-child{
+            width:35%;
+            height:80%;
+        }
     }
     .sirsParagraphContainer{
-        display:block;
         margin:1rem;
         font-size:1.5rem;
         line-height:2rem;

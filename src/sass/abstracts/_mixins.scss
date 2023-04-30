@@ -1,5 +1,5 @@
 /* set delay and duration of animation */
-@mixin animation-option($delay:1.5s,$duration:6s){
+@mixin animation-option($delay:0.5s,$duration:6s){
     animation:{
         delay:$delay;
         duration:$duration;
