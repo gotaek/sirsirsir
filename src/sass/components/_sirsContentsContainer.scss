@@ -1,18 +1,28 @@
 .sirsContentsContainer{
     @extend .contentsContainer;
     height:$default-height;
-    .sirsImgContainer{
+    .sirsImgBoxesContainer{
         margin:1rem 1rem;
         width: 95%;
         height: 25rem;
         display:flex;
         justify-content: space-around;
-        img:first-child{
-            width:60%;
+        .sirsImgBoxLarge{
+            width: 60%;
+            height: 100%;
+            .imgItem {
+                @extend .defaultImgItemOption;
+                background-image: url('https://source.unsplash.com/random/400×400/?blue');
+                
+            }
         }
-        img:last-child{
-            width:35%;
-            height:80%;
+        .sirsImgBoxSmall{
+            width: 35%;
+            height: 85%;
+            .imgItem{
+                @extend .defaultImgItemOption;
+                background-image: url('https://source.unsplash.com/random/400×400/?blue');
+            }
         }
     }
     .sirsParagraphContainer{

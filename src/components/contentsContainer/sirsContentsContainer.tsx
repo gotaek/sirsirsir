@@ -12,12 +12,13 @@ export default function SirsContentsContainer() {
           <span>the past as a human beings</span>
         </li>
       </nav>
-      <div className="sirsImgContainer">
-        <img
-          src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-          alt=""
-        />
-        <img src="https://source.unsplash.com/random/400×400/?blue" alt="" />
+      <div className="sirsImgBoxesContainer">
+        <div className="sirsImgBoxLarge">
+          <div className="imgItem" />
+        </div>
+        <div className="sirsImgBoxSmall">
+          <div className="imgItem" />
+        </div>
       </div>
       <p className="sirsParagraphContainer">
         Not only Seoul to Kyonggi-do, but also child to adult of the child.
