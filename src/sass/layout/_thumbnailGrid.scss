@@ -1,14 +1,52 @@
+$sirs-thumbnails: (
+    'thumbnailItem1':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem2':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem3':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem4':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem5':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem6':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem7':'https://source.unsplash.com/random/400×400/?color',
+    'thumbnailItem8':'https://source.unsplash.com/random/400×400/?color',
+);
+$irs-thumbnails: (
+    'thumbnailItem1':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem2':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem3':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem4':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem5':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem6':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem7':'https://source.unsplash.com/random/400×400/?flower',
+    'thumbnailItem8':'https://source.unsplash.com/random/400×400/?flower',
+);
+$ir-thumbnails: (
+    'thumbnailItem1':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem2':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem3':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem4':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem5':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem6':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem7':'https://source.unsplash.com/random/400×400/?architect',
+    'thumbnailItem8':'https://source.unsplash.com/random/400×400/?architect',
+);
+
 .thumbnailGrid{
     margin:2rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(13rem, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
     grid-template-rows: repeat(2,10rem);
     grid-auto-rows:10rem;
     gap:1rem;
-    .item{
-        background-color: teal;
+    .sirsThumbnailBox{
         height:100%;
-
+        @include set-images($sirs-thumbnails);
+    }
+    .irsThumbnailBox {
+        height: 100%;
+        @include set-images($irs-thumbnails);
+    }
+    .irThumbnailBox {
+        height: 100%;
+        @include set-images($ir-thumbnails);
     }
 
 }

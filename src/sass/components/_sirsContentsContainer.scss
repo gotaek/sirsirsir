@@ -7,7 +7,6 @@ $images: (
     @include set-images($images);
 
     @extend .contentsContainer;
-    
     .sirsImgBoxesContainer{
         margin:2rem auto;
         width: 95%;
