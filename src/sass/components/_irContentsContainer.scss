@@ -1,7 +1,7 @@
 .irContentsContainer {
     @extend .contentsContainer;
-    height: $default-height;
     .irParagraphContainer{
+        margin-bottom:20rem;
         display:flex;
         flex-direction:column;
         justify-content: space-between;

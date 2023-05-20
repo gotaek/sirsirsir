@@ -7,9 +7,8 @@ $images:(
 
 .irsContentsContainer {
     @include set-images($images);
-    
     @extend .contentsContainer;
-    height: $default-height;
+
     .irsSection{
         display:flex;
         .irsImgBoxesContainer {
@@ -29,17 +28,14 @@ $images:(
         }
     }
     .irsImgBoxesContainer2{
-        position:absolute;
-        top:18rem;
-        right:0rem;
         display:flex;
-        width:80%;
-        justify-content:space-between;
-        width: 40rem;
-        height: 12rem;
+        width:100%;
+        justify-content:flex-end;
+         transform:translateY(-2.5rem);
         .irsImgBoxSmall{
-            width:32%;
-            height:100%;
+            width:12rem;
+            height:12rem;
+            margin:0 0.5rem;
         }
         
     }

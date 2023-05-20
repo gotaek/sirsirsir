@@ -9,7 +9,7 @@ $images: (
     @extend .contentsContainer;
     
     .sirsImgBoxesContainer{
-        margin:1rem 1rem;
+        margin:2rem auto;
         width: 95%;
         height: 25rem;
         display:flex;
@@ -24,7 +24,7 @@ $images: (
         }
     }
     .sirsParagraphContainer{
-        margin:1rem;
+        margin:2rem;
         font-size:1.5rem;
         line-height:2rem;
     }
