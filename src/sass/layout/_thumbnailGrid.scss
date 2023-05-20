@@ -1,0 +1,14 @@
+.thumbnailGrid{
+    margin:2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(13rem, 1fr));
+    grid-template-rows: repeat(2,10rem);
+    grid-auto-rows:10rem;
+    gap:1rem;
+    .item{
+        background-color: teal;
+        height:100%;
+
+    }
+
+}

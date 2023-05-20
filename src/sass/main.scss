@@ -14,7 +14,6 @@
 //사이트 전반에 사용될 폰트,디폴트 스타일, 키프레임을 포함한 애니메이션이 여기에 해당된다.
 @import 'base/base';
 @import 'base/animations';
-@import 'base/sideContainer';
 @import 'base/contentsContainer';
 @import 'base/defaultImgItemOption';
 
@@ -23,6 +22,8 @@
 @import './layout/header';
 @import './layout/mainFlexbox';
 @import './layout/navigator';
+@import './layout/thumbnailGrid';
+@import './layout/sideContainer';
 
 //components
 //layout보다 더 작은 구성 요소들을 담고 있다.

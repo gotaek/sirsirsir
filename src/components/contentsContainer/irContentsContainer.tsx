@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThumbnailGrid from '../../layout/thumbnailGrid';
 
 export default function IrContentsContainer() {
   return (
@@ -39,6 +40,7 @@ export default function IrContentsContainer() {
           <p className="irParagraphContent">trying to grow me in other jobs.</p>
         </div>
       </div>
+      <ThumbnailGrid pageName="ir" />
     </div>
   );
 }

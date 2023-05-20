@@ -1,14 +1,24 @@
+$images:(
+    'imgItem1':'https://source.unsplash.com/random/400X400/?blue',
+    'imgItem2':'https://source.unsplash.com/random/400×400/?red',
+    'imgItem3':'https://source.unsplash.com/random/400×400/?yellow',
+    'imgItem4':'https://source.unsplash.com/random/400×400/?green'
+);
+
 .irsContentsContainer {
+    @include set-images($images);
+    
     @extend .contentsContainer;
     height: $default-height;
     .irsSection{
         display:flex;
-        .irsImgContainer {
+        .irsImgBoxesContainer {
             width: 25rem;
             height: 25rem;
-            img {
+            .irsImgBoxLarge {
                width:100%;
-               box-sizing:border-box;
+               height:100%;
+               
             }
         }
         .irsParagraphContainer{
@@ -18,7 +28,7 @@
             line-height: $default-line-height;
         }
     }
-    .irsImgContainer2{
+    .irsImgBoxesContainer2{
         position:absolute;
         top:18rem;
         right:0rem;
@@ -27,9 +37,11 @@
         justify-content:space-between;
         width: 40rem;
         height: 12rem;
-        img{
+        .irsImgBoxSmall{
             width:32%;
+            height:100%;
         }
+        
     }
     
 }

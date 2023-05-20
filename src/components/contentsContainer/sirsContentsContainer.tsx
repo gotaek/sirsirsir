@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThumbnailGrid from '../../layout/thumbnailGrid';
 
 export default function SirsContentsContainer() {
   return (
@@ -14,10 +15,10 @@ export default function SirsContentsContainer() {
       </nav>
       <div className="sirsImgBoxesContainer">
         <div className="sirsImgBoxLarge">
-          <div className="imgItem" />
+          <div className="imgItem1" />
         </div>
         <div className="sirsImgBoxSmall">
-          <div className="imgItem" />
+          <div className="imgItem2" />
         </div>
       </div>
       <p className="sirsParagraphContainer">
@@ -27,6 +28,7 @@ export default function SirsContentsContainer() {
         <br />
         And I learned love of my life. Life of my love too.
       </p>
+      <ThumbnailGrid pageName="sirs" />
     </div>
   );
 }

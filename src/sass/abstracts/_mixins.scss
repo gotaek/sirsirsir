@@ -30,8 +30,17 @@
 }
 
 /* set grid item's location */
-@mixin grid-item-location($row-start,$row-end,$column-start,$column-end){
+@mixin set-grid-item-location($row-start,$row-end,$column-start,$column-end){
     grid-row:#{$row-start}/#{$row-end};
     grid-column:#{$column-start}/#{$column-end};
 }
 
+/* set background image items */
+@mixin set-images($images){
+    @each $name,$url in $images{
+    .#{ $name } {
+            @extend .defaultImgItemOption;
+            background-image: url('#{ $url }');
+        }
+    }
+}
