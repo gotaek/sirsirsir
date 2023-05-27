@@ -12,7 +12,10 @@ export default function WorkPart1() {
         of Lorem Ipsum.
       </p>
       <div className="imgParagraphContainer">
-        <img src="https://source.unsplash.com/random/200X100/?purple" alt="" />
+        <div className="imgBox">
+          <img src="https://source.unsplash.com/random/?architect" alt="" />
+        </div>
+
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
           standard dummy text ever since the 1500s, when an unknown

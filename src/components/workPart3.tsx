@@ -22,9 +22,15 @@ export default function WorkPart3() {
         </p>
       </div>
       <div className="imgGrid">
-        <img src="https://source.unsplash.com/random/400x400/?color" alt="" />
-        <img src="https://source.unsplash.com/random/400x400/?color" alt="" />
-        <img src="https://source.unsplash.com/random/400x400/?color" alt="" />
+        <div className="imgBox">
+          <img src="https://source.unsplash.com/random/?color" alt="" />
+        </div>
+        <div className="imgBox">
+          <img src="https://source.unsplash.com/random/?color" alt="" />
+        </div>
+        <div className="imgBox">
+          <img src="https://source.unsplash.com/random/?color" alt="" />
+        </div>
       </div>
     </div>
   );
