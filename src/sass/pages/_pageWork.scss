@@ -1,0 +1,40 @@
+.pageWork{
+    
+    padding:1.5rem 3rem;
+
+    font-size:$default-font-size;
+    line-height: $default-line-height;
+    .part1{
+        .explanation{
+            margin: 1rem;
+            width:70%;
+            height:35vh;
+            
+        }
+        .imgParagraphContainer{
+            margin:1rem;
+            display: flex;
+            justify-content:space-around;
+            align-items: flex-end;
+            margin:0 10rem;
+            img{
+                width:50%;
+                height:38vh;
+                flex-shrink: 4;
+                align-self: flex-end;
+            }
+            p{
+                border-left:white 10px solid;
+                padding:0.5rem;
+                font-size:medium;
+                line-height: 1rem;
+                width:20%;
+                height:20vh;
+                flex-shrink:1;
+                text-align: center;
+                vertical-align: middle;
+
+            }
+        }
+    }
+}

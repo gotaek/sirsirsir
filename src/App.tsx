@@ -6,6 +6,7 @@ import Home from './pages/home';
 import PageSirs from './pages/pageSirs';
 import PageIrs from './pages/pageIrs';
 import PageIr from './pages/pageIr';
+import PageWork from './pages/pageWork';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/sirs" element={<PageSirs />} />
         <Route path="/irs" element={<PageIrs />} />
         <Route path="/ir" element={<PageIr />} />
+        <Route path="/work/:id" element={<PageWork />} />
       </Routes>
     </BrowserRouter>
   );

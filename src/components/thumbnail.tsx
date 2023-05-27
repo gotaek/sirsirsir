@@ -9,7 +9,7 @@ export default function Thumbnail({ pageName, id }: ThumbnailProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/${pageName}/work${id}`);
+    navigate(`/work/${pageName}-${id}`);
   };
 
   return (
