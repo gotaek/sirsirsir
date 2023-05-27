@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import WorkPart1 from '../components/workPart1';
 import WorkPart2 from '../components/workPart2';
 import WorkPart3 from '../components/workPart3';
+import WorkPart4 from '../components/workPart4';
 
 export default function PageWork() {
   const params = useParams();
@@ -18,6 +19,7 @@ export default function PageWork() {
       <WorkPart1 />
       <WorkPart2 />
       <WorkPart3 />
+      <WorkPart4 />
     </div>
   );
 }

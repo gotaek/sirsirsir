@@ -12,12 +12,12 @@ export default function WorkPart2() {
         of Lorem Ipsum.
       </p>
       <div className="imgGrid">
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
-        <img src="https://source.unsplash.com/random/200X100/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
+        <img src="https://source.unsplash.com/random/200x200/?F1" alt="" />
       </div>
     </div>
   );
