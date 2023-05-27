@@ -40,7 +40,7 @@
     .part2{
         margin:2rem;
         display:flex;
-        height: 90vh;
+        height: 95vh;
         .explanation{
             padding:1rem;
             width:50%;
@@ -57,7 +57,34 @@
             
             img{
                 width:100%;
-                max-height:12vw;
+                max-height:14vw;
+            }
+        }
+    }
+    .part3{
+        margin: 2rem;
+            display: flex;
+            height: 90vh;
+        .paragraphContainer{
+            width:60%;
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+
+        }
+        .imgGrid{
+            padding: 0 2rem;
+            width: 40%;
+            display: grid;
+            gap:0.3rem;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+
+            img{
+                width: 100%;
+                max-height:13vw;
+
             }
         }
     }
