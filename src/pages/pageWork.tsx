@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import WorkPart1 from '../components/workPart1';
+import WorkPart2 from '../components/workPart2';
 
 export default function PageWork() {
   const params = useParams();
@@ -14,6 +15,7 @@ export default function PageWork() {
   return (
     <div className="pageWork">
       <WorkPart1 />
+      <WorkPart2 />
     </div>
   );
 }

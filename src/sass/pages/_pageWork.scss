@@ -24,7 +24,7 @@
                 align-self: flex-end;
             }
             p{
-                border-left:white 10px solid;
+                border-left:white 0.5vw solid;
                 padding:0.5rem;
                 font-size:medium;
                 line-height: 1rem;
@@ -34,6 +34,30 @@
                 text-align: center;
                 vertical-align: middle;
 
+            }
+        }
+    }
+    .part2{
+        margin:2rem;
+        display:flex;
+        height: 90vh;
+        .explanation{
+            padding:1rem;
+            width:50%;
+            border-right:white 0.5vw solid;
+        }
+        .imgGrid{
+            padding:1rem 2rem;
+            width: 50%;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap:1rem;
+            align-items: center;
+            
+            img{
+                width:100%;
+                max-height:12vw;
             }
         }
     }
