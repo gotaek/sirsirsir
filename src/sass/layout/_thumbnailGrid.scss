@@ -38,15 +38,36 @@ $ir-thumbnails: (
     gap:1rem;
     .sirsThumbnailBox{
         height:100%;
+        overflow:hidden;
         @include set-images($sirs-thumbnails);
+        [class^="thumbnailItem"]{
+            transition: transform 0.2s linear;
+        }
+        [class^="thumbnailItem"]:hover{
+            transform:scale(1.1);
+        }
     }
     .irsThumbnailBox {
         height: 100%;
+        overflow:hidden;
         @include set-images($irs-thumbnails);
+        [class^="thumbnailItem"]{
+            transition: transform 0.2s linear;
+        }
+        [class^="thumbnailItem"]:hover{
+            transform:scale(1.1);
+        }
     }
     .irThumbnailBox {
         height: 100%;
+        overflow:hidden;
         @include set-images($ir-thumbnails);
+        [class^="thumbnailItem"]{
+            transition: transform 0.2s linear;
+        }
+        [class^="thumbnailItem"]:hover{
+            transform:scale(1.1);
+        }
     }
 
 }

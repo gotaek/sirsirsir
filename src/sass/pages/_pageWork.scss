@@ -162,6 +162,24 @@
                 justify-content:space-between;
                 width:50%;
                 margin:0 3rem;
+                .title{
+                    width:50%;
+                    height:20vh;
+                    line-height:20vh;
+                    text-align: center;
+                    align-self:center;
+                    font-size:4rem;
+                    border: white 0.5vw solid;
+                    border-right:none;
+                    border-radius:15rem 0 0 15rem;
+                    
+                }
+                .information{
+                    width:50%;
+                    height:10vh;
+                    align-self:flex-end;
+                    text-align: center;
+                }
             }
         }
 }

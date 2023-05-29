@@ -25,10 +25,7 @@ export default function WorkPart4() {
           typesetting, remaining essentially unchanged.
         </p>
         <div className="title">SirSirSir</div>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
-          standard dummy
-        </p>
+        <p className="information">Lorem Ipsum is simply dummy text of the printing</p>
       </div>
     </div>
   );
