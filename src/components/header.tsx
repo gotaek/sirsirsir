@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Contact from './contact';
 
 function Header() {
   return (
-    <header className="header">
+    <Link className="header" to="/">
       <Contact />
       <div className="title">SIRSIRSIR</div>
-    </header>
+    </Link>
   );
 }
 
