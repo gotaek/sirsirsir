@@ -17,7 +17,7 @@
 
 /* tablet browser */
 @mixin tablet {
-    @media (min-width: $mobile-size+1) and (max-width: $tablet-size) {
+    @media (min-width: $mobile-size) and (max-width: $tablet-size) {
         @content;
     }
 }

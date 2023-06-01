@@ -1,4 +1,11 @@
 .mainFlexbox{
     display:flex;
     justify-content:space-between;
+    align-items: center;
+    @media (max-width: $mobile-size) and (orientation:portrait){
+        flex-direction: column;
+        justify-content:center;
+        margin:2rem;
+    }
+    
 }

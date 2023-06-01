@@ -1,9 +1,10 @@
 $images: (
-    'imgItem1':'https://source.unsplash.com/random/400X400/?purple',
+    'imgItem1':'https://source.unsplash.com/random/400X400/?yellow',
     'imgItem2':'https://source.unsplash.com/random/400×400/?blue',
 );
 
 .sirsContentsContainer{
+
     @include set-images($images);
 
     @extend .contentsContainer;

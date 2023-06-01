@@ -18,6 +18,9 @@
         animation-name: change-circle-square-triangle;
         @include animation-option;
     }
-    
+    @include mobile{
+        width:2rem;
+        height:2rem;
+    }
     
 }

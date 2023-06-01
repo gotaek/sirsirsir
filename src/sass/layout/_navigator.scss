@@ -12,15 +12,15 @@ $navItems: (
 nav{
     width: 100%;
     height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
     position: absolute;
     color: white;
     z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
-.navItemPast {
+    .navItemPast {
         top: 1rem;
         left: 42rem;
 
@@ -72,6 +72,56 @@ nav{
                 font-size: 1.5rem;
             }
         }
+    }
+    /*navigator media quiery tablet*/
+    @media (min-width: $mobile-size) and (max-width:1340px){
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: inherit;
+            @each $navItem in $navItems {
+                .#{$navItem} {
+                    position: static;
+                    
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /*navigator media quiery mobile*/
+    @include mobile {
+        height:80%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: inherit;
+            @each $navItem in $navItems {
+                .#{$navItem} {
+                    position: static;
+                    padding:0 0.5rem;
+                    
+                    @each $link in $links {
+                        .#{$link} {
+                            position:static;
+                            font-size:2rem;
+                            transform:none;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        font-size:0.5rem;
+                        padding:3px;
+                    }
+
+                }
+            }
+        }
+        
     }
     
 }

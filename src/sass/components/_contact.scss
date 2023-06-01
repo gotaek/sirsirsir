@@ -6,5 +6,9 @@
     flex-direction:column;
     justify-content:space-between;
     height:70%;
+    min-width:120px;
+    @include mobile{
+        font-size:0.5rem;
+    }
 
 }

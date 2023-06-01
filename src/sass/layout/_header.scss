@@ -2,7 +2,8 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    height:12vh;
+
+    min-height:80px;
     padding:1.5rem 3rem;
     background:black;
     //position:relative;
@@ -12,5 +13,16 @@
         font-weight:500;
         letter-spacing: 0.2rem;
         //text-shadow: 0 0 0.8vh rgb(255, 255, 255);
+    }
+    @include tablet{
+        height:10vh;
+        padding:1rem 2rem;
+    }
+    @include mobile {
+        height: 10vh;
+        padding: 1rem 0.5rem;
+        .title{
+            font-size:1.5rem;
+        }
     }
 }
