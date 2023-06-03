@@ -5,13 +5,15 @@ import ThumbnailGrid from '../../layout/thumbnailGrid';
 export default function SirsContentsContainer() {
   return (
     <div className="sirsContentsContainer">
-      <nav>
-        <li className="navItemPast">
-          <Link className="linkSirs" to="/sirs">
-            sirs.
-          </Link>
-          <span>the past as a human beings</span>
-        </li>
+      <nav className="noDisplay">
+        <ul>
+          <li className="navItemPast">
+            <Link className="linkSirs" to="/sirs">
+              sirs.
+            </Link>
+            <span>the past as a human beings</span>
+          </li>
+        </ul>
       </nav>
       <div className="sirsImgBoxesContainer">
         <div className="sirsImgBoxLarge">

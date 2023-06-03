@@ -83,12 +83,14 @@ nav{
             @each $navItem in $navItems {
                 .#{$navItem} {
                     position: static;
-                    
                     span {
                         text-align: center;
                     }
                 }
             }
+        }
+        &.noDisplay{
+            display:none;
         }
     }
 
@@ -121,7 +123,9 @@ nav{
                 }
             }
         }
-        
+        &.noDisplay {
+            display: none;
+        }
     }
     
 }

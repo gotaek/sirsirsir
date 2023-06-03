@@ -4,7 +4,6 @@ $images: (
 );
 
 .sirsContentsContainer{
-
     @include set-images($images);
 
     @extend .contentsContainer;
@@ -16,16 +15,68 @@ $images: (
         justify-content: space-around;
         .sirsImgBoxLarge{
             width: 60%;
-            height: 100%;
+            height:100%;
         }
         .sirsImgBoxSmall{
             width: 35%;
             height: 85%;
         }
+
+        
     }
     .sirsParagraphContainer{
         margin:2rem;
         font-size:1.5rem;
         line-height:2rem;
+    }
+    @include tablet {
+        .sirsImgBoxesContainer {
+                flex-direction: column;
+                box-sizing: border-box;
+                width: 100%;
+                height: 80vh;
+                justify-content: space-around;
+                align-items: center;
+                padding: 1rem;
+        
+                .sirsImgBoxLarge {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 1rem;
+                }
+        
+                .sirsImgBoxSmall {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    }
+    @include mobile{
+        .sirsImgBoxesContainer {
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 100%;
+            height:80vh;
+            justify-content: space-around;
+            align-items: center;
+            padding:1rem;
+            .sirsImgBoxLarge {
+                width:100%;
+                height:100%;
+                margin-bottom: 1rem;
+            }
+    
+            .sirsImgBoxSmall {
+                width: 100%;
+                height: 100%;
+            }
+        }   
+        
+        .sirsParagraphContainer {
+            margin: 0rem;
+            padding:1rem;
+            font-size: $medium-font-size;
+        }
+        
     }
 }
