@@ -10,7 +10,10 @@ $images:(
     @extend .contentsContainer;
 
     .irsSection{
-        display:flex;
+        margin: 2rem auto;
+        width: 95%;
+        height: 25rem;
+        display: flex;
         .irsImgBoxesContainer {
             width: 25rem;
             height: 25rem;
@@ -21,8 +24,9 @@ $images:(
             }
         }
         .irsParagraphContainer{
-            width:50%;
-            margin: 1rem;
+            width:400px;
+            box-sizing: border-box;
+            padding:0.5rem 1rem ;
             font-size: $default-font-size;
             line-height: $default-line-height;
         }
@@ -31,11 +35,54 @@ $images:(
         display:flex;
         width:100%;
         justify-content:flex-end;
-         transform:translateY(-2.5rem);
         .irsImgBoxSmall{
             width:12rem;
             height:12rem;
             margin:0 0.5rem;
+        }
+        
+    }
+
+    @include tablet {
+        .irsSection {
+            flex-direction: column;
+
+            .irsImgBoxesContainer {
+                width: 23rem;
+            }
+
+            .irsParagraphContainer {
+                width: 100%;
+                padding: 0.5rem;
+                font-size:$tablet-font-size;
+            }
+        }
+
+        .irsImgBoxesContainer2 {
+            .irsImgBoxSmall {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+    @include mobile{
+        .irsSection{
+            flex-direction:column;
+            .irsImgBoxesContainer {
+                width:20rem;
+            }
+            .irsParagraphContainer {
+                width: 100%;
+                padding:0.5rem;
+                font-size: $mobile-font-size;
+            }
+        }
+        .irsImgBoxesContainer2 {
+            .irsImgBoxSmall {
+                width: 5rem;
+                height: 5rem;
+            }
         }
         
     }

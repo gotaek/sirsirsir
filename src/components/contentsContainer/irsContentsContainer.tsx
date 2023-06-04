@@ -5,7 +5,7 @@ import ThumbnailGrid from '../../layout/thumbnailGrid';
 export default function IrsContentsContainer() {
   return (
     <div className="irsContentsContainer">
-      <nav>
+      <nav className="noDisplay">
         <li className="navItemPresent">
           <Link className="linkIrs" to="/irs">
             irs.

@@ -34,48 +34,52 @@ $images: (
                 flex-direction: column;
                 box-sizing: border-box;
                 width: 100%;
-                height: 80vh;
+                height:auto;
                 justify-content: space-around;
                 align-items: center;
                 padding: 1rem;
-        
                 .sirsImgBoxLarge {
-                    width: 100%;
-                    height: 100%;
+                    width: 30rem;
+                    height: 17.5rem;
                     margin-bottom: 1rem;
                 }
         
                 .sirsImgBoxSmall {
-                    width: 100%;
-                    height: 100%;
+                    width: 12rem;
+                    height: 12rem;
                 }
+                
+            }
+            .sirsParagraphContainer {
+                font-size: $tablet-font-size;
+                margin:2rem 1rem;
+
             }
     }
     @include mobile{
         .sirsImgBoxesContainer {
             flex-direction: column;
-            box-sizing: border-box;
             width: 100%;
             height:80vh;
             justify-content: space-around;
             align-items: center;
             padding:1rem;
             .sirsImgBoxLarge {
-                width:100%;
-                height:100%;
+                width:23rem;
+                height:17.5rem;
                 margin-bottom: 1rem;
             }
     
             .sirsImgBoxSmall {
-                width: 100%;
-                height: 100%;
+                width: 10rem;
+                height: 10rem;
             }
         }   
         
         .sirsParagraphContainer {
             margin: 0rem;
             padding:1rem;
-            font-size: $medium-font-size;
+            font-size: $mobile-font-size;
         }
         
     }
