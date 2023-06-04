@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+const MIN_NUM = 6;
+
 export function getNumComponentsFromScrollHeight() {
     const [numComponents, setNumComponents] = useState<number>(0);
     useEffect(() => {
@@ -16,5 +18,5 @@ export function getNumComponentsFromScrollHeight() {
       window.removeEventListener('resize', handleResize);
     };
     }, []);
-    return numComponents;
+    return numComponents<MIN_NUM?MIN_NUM:numComponents;
 }
