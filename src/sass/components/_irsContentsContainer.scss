@@ -24,7 +24,7 @@ $images:(
             }
         }
         .irsParagraphContainer{
-            width:400px;
+            width:50%;
             box-sizing: border-box;
             padding:0.5rem 1rem ;
             font-size: $default-font-size;
@@ -42,7 +42,6 @@ $images:(
         }
         
     }
-
     @include tablet {
         .irsSection {
             flex-direction: column;
@@ -69,8 +68,10 @@ $images:(
     @include mobile{
         .irsSection{
             flex-direction:column;
+            height:auto;
             .irsImgBoxesContainer {
-                width:20rem;
+                width:15rem;
+                height:15rem;
             }
             .irsParagraphContainer {
                 width: 100%;
