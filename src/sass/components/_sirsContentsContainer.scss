@@ -26,7 +26,8 @@ $images: (
     }
     .sirsParagraphContainer{
         margin:2rem;
-        font-size:1.5rem;
+        box-sizing: border-box;
+        font-size:$default-font-size;
         line-height:2rem;
     }
     @include tablet {
@@ -37,16 +38,16 @@ $images: (
                 height:auto;
                 justify-content: space-around;
                 align-items: center;
-                padding: 1rem;
+
                 .sirsImgBoxLarge {
-                    width: 30rem;
-                    height: 17.5rem;
+                    width: 100%;
+                    height: 35vw;
                     margin-bottom: 1rem;
                 }
         
                 .sirsImgBoxSmall {
-                    width: 12rem;
-                    height: 12rem;
+                    width: 15rem;
+                    height: 15rem;
                 }
                 
             }
@@ -59,14 +60,15 @@ $images: (
     @include mobile{
         .sirsImgBoxesContainer {
             flex-direction: column;
-            width: 100%;
-            height:80vh;
+            width: 90%;
+            height:auto;
             justify-content: space-around;
             align-items: center;
-            padding:1rem;
+
+            box-sizing:border-box;
             .sirsImgBoxLarge {
-                width:23rem;
-                height:17.5rem;
+                width:100%;
+                height:50vw;
                 margin-bottom: 1rem;
             }
     

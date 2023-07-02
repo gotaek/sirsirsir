@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./AnyConv.com__IBMPlexSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight: 200;
+    src: url("./AnyConv.com__IBMPlexSansKR-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight:300;
+    src: url("./AnyConv.com__IBMPlexSansKR-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    src: url("./AnyConv.com__IBMPlexSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./AnyConv.com__IBMPlexSansKR-SemiBold.woff") format("woff");
+}
+@font-face {
+    font-family: "IBM Plex Sans KR";
+    font-style: normal;
+    font-weight: 100;
+    src: url("./AnyConv.com__IBMPlexSansKR-Thin.woff") format("woff");
+}

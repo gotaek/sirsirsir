@@ -49,6 +49,10 @@
         top:0;
         width:12rem;
         height:12rem;
+        @include tablet{
+            width:11rem;
+            height:11rem;
+        }
         @include mobile {
             margin-bottom:3rem;
             width: 8rem;

@@ -40,6 +40,7 @@ $ir-thumbnails: (
     gap:1rem;
     overflow:hidden;
     .sirsThumbnailBox{
+        
         height:100%;
         overflow:hidden;
         @include set-images($sirs-thumbnails);
@@ -72,5 +73,7 @@ $ir-thumbnails: (
             transform:scale(1.1);
         }
     }
-
+    @include tablet{
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    }
 }
