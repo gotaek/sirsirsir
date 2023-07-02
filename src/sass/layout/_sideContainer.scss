@@ -17,7 +17,7 @@
         width:40%;
         
     }
-    @media (max-width: $mobile-size) and (orientation:portrait){
+    @include mobile{
         margin-bottom: 0rem;
         width:100%;
         [class*="Grid"] {

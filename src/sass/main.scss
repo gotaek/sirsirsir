@@ -5,8 +5,6 @@
 @import 'abstracts/mixins';
 
 
-//vendors
-//프로젝트에서 사용하는 외부 라이브러리 및 프레임워크의 모든 CSS 파일을 담고 있다.
 
 
 //base
@@ -29,7 +27,6 @@
 //layout보다 더 작은 구성 요소들을 담고 있다.
 //즉, 소형 레이아웃 같은 의미로 사이트 내에서 재사용 가능한 작은 부분들을 의미한다.
 @import './components/shapeBox';
-@import './components/Modal';
 @import './components/contact';
 @import './components/homeContentsContainer';
 @import './components/sirsContentsContainer';
@@ -40,5 +37,3 @@
 //모든 페이지가 동일한 스타일을 사용하지는 않기 때문에, 페이지 고유의 스타일이 있는 경우 페이지 이름을 딴 파일을 만들어서 이 폴더에 넣어 사용한다.
 @import './pages/pageWork.scss';
 
-//themes
-//대규모 사이트와 애플리케이션에는 다양한 모드의 테마를 사용하고는 하는데, 각 모드에 따라서 각기 다른 스타일을 지정하여 담아두는 곳이다.

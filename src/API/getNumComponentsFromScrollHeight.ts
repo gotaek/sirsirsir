@@ -7,7 +7,6 @@ export function getNumComponentsFromScrollHeight() {
     useEffect(() => {
     function handleResize() {
       const windowHeight = document.body.scrollHeight;
-      console.log(windowHeight);
 
       const componentHeight = 75;
       setNumComponents(Math.floor(windowHeight / componentHeight));
@@ -17,6 +16,6 @@ export function getNumComponentsFromScrollHeight() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-    }, []);
+    }, [document.body.scrollHeight]);
     return numComponents<MIN_NUM?MIN_NUM:numComponents;
 }

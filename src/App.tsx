@@ -1,8 +1,8 @@
 import React from 'react';
 import './sass/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/header';
-import Home from './pages/home';
+import Header from './layout/header';
+import Home from './pages/pageHome';
 import PageSirs from './pages/pageSirs';
 import PageIrs from './pages/pageIrs';
 import PageIr from './pages/pageIr';
